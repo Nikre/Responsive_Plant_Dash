@@ -1,4 +1,5 @@
 import HumidityHome from "@/components/HumidityHome";
+import PagesManifestPlugin from "next/dist/build/webpack/plugins/pages-manifest-plugin";
 
 
 export default function Home() {
@@ -17,6 +18,7 @@ export default function Home() {
       <div className="home-container">
         {plants.map(plant => (
           <HumidityHome
+            id={plant.id}
             key={plant.id}
             name={plant.name}
             imageUrl={plant.imageUrl}

@@ -59,14 +59,28 @@
   gap: 4em;
 }
 
-.humidity-square {
+.plant-box {
   border: solid #7b8f76;
   border-radius: 2em;
   min-width: 22em;
   min-height: 18em;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
+}
+
+.plant-name {
+  font-size: 16px;
+  font-weight: bolder;
+}
+
+.humidity-combobox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 2em;
 }
 
 .circular-indicator {

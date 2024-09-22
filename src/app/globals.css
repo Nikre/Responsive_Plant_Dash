@@ -6,6 +6,13 @@
   font-family: monospace;
 }
 
+body {
+  min-height: 100vh;
+  margin: 0;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
 .navbar {
   background-color: #599748;
   color: white;
@@ -94,13 +101,12 @@
 }
 
 footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
+  padding-bottom: 6px;
 }
 
 .footer-text {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  text-align: center;
 }

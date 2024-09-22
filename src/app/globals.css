@@ -69,8 +69,14 @@
   justify-content: space-evenly;
 }
 
-.image-container{
-  
+.circular-indicator {
+  display: inline-block;
+}
+
+.circular-indicator circle {
+  transition: stroke-dashoffset 0.35s;
+  transform: rotate(-90deg);
+  transform-origin: 50% 50%;
 }
 
 footer {

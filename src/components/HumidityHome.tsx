@@ -1,5 +1,6 @@
 // components/HumiditySquare.js
 import Image from 'next/image'
+import CircularIndicator from './CircularIndicator';
 
 interface HumidityHomeProps {
     imageUrl: string;
@@ -13,7 +14,7 @@ const HumidityHome = ({ imageUrl, humidity } : HumidityHomeProps) => {
                 <Image src={imageUrl} alt="Plant" objectFit="cover" width={100} height={200}/>
             </div>
             <div className="humidity-indicator">
-                <span>{humidity}%</span>
+                <CircularIndicator value={humidity} max={100} />
             </div>
         </div>
     )
